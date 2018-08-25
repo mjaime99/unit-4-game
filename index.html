@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jokers Wild!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- resets go here -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="/unit-4-game/assets/css/style.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <header>Jokers Wild!</header>
+          </div>
+          <div class="row">
+              <div id="rules" class="col-md-6">
+                  <p>You will be given a random number at the start of the game.</p>
+                  <p>There are four joker cards below. By clicking on a card you will add a specific amount of points to total your score.</p>
+                  <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                  <p>The value of each card is hidden from you until you click on it.</p>
+                  <p>Each time when the game starts, the game will change the values of each card.</p>
+              </div>
+          </div>
+          <div class="row">
+              <div id="total-score" class="col-sm-2">
+                  <h2>
+                      Target:
+                        <span id="total-target"></span>
+                  </h2>
+              </div>
+              <div id="results" class="col-sm-2">
+                  <p>
+                      <span id="result-message"></span>
+                  </p>
+                  <p>Wins:
+                      <span id="wins"></span>
+                  </p>
+                  <p>Losses:
+                      <span id="losses"></span>
+                  </p>
+              </div>
+              <div id="user-total" class="col-sm-2">
+                    <h2>Your total score is:
+                        <span id="final-total"></span>
+                    </h2>
+              </div>
+              <div class="cardrow">
+                <div id="joker1" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <img src="assets/images/joker1.PNG">
+                        <input type="radio" name="options" autocomplete="off">
+                    </label>
+                    <label id="joker2" class="btn btn-secondary">
+                        <img src="assets/images/joker2.PNG">
+                        <input type="radio" name="options" autocomplete="off">
+                    </label>
+                    <label id="joker3" class="btn btn-secondary">
+                        <img src="assets/images/joker3.PNG">
+                        <input type="radio" name="options" autocomplete="off">
+                    </label>
+                    <label id="joker4" class="btn btn-secondary">
+                        <img src="assets/images/joker4.PNG">
+                        <input type="radio" name="options" autocomplete="off">
+                    </label>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="/unit-4-game/assets/javascript/game.js"></script>
+</body>
+
+</html>

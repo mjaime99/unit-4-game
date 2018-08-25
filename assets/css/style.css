@@ -1,0 +1,57 @@
+body {
+    background-image: url(/unit-4-game/assets/images/shirtpattern.jpg);
+}
+
+.row {
+    margin: 5px;
+}
+
+.col-md-3 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header {
+    background-image: url(/unit-4-game/assets/images/tiepattern3.jpg);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 27px;
+}
+
+#rules {
+    background-image: url(/unit-4-game/assets/images/vest2.jpg);
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px dashed purple;
+}
+
+.score1 {
+    background: darkgreen;
+    color: blue;
+}
+
+#results {
+    background: white;
+    color: black;
+}
+
+#total-score {
+    background: black;
+    color: white
+}
+
+.cardrow {
+    margin: 10px;
+    border: 5px solid orange;
+}
+#user-total {
+    background: red;
+    color: white;
+    padding-bottom: 100px;
+    padding-right: 75px;
+}
+
